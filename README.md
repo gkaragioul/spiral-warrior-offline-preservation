@@ -1,6 +1,6 @@
 # Spiral Warrior / 螺旋勇士 — Offline Preservation Toolkit
 
-**Status:** Paused, seeking collaborators &nbsp;|&nbsp; **Version:** v0.3 &nbsp;|&nbsp; **License:** MIT
+**Status:** Archived (read-only; fork it to continue) &nbsp;|&nbsp; **Version:** v0.3 &nbsp;|&nbsp; **License:** MIT
 
 A local preservation lab for **Spiral Warrior / 螺旋勇士**, a Cocos Creator
 mobile game whose official services are no longer reachable. The project
