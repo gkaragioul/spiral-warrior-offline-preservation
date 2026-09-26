@@ -9,8 +9,10 @@ already own to boot, authenticate, reach the lobby, and **play the prologue
 Adventure chapter through to its boss** — entirely against local services, with
 no production endpoint contacted after launch.
 
-**This repository contains no game client, no game assets, no decrypted source
-and no keys.** See [NOTICE](NOTICE).
+**This repository contains no game client, no game assets and no keys.** It
+quotes a few short lines of the decrypted client where a patch needs them, and
+it includes tools that decrypt and patch a copy you supply. See [Legal](#legal)
+and [NOTICE](NOTICE).
 
 ---
 
@@ -117,7 +119,9 @@ Full detail, plus the house rules on evidence and testing, in
 **Explicitly not included**
 
 - Game client, APK/XAPK, assets, installers, or any patched build
-- Decrypted, decompiled or otherwise recovered proprietary source
+- Decrypted, decompiled or otherwise recovered proprietary source, apart from
+  the few short lines quoted in `tools/cn_client_patch.py` and its test so the
+  patch can find the code it changes
 - Cryptographic keys, signing keystores, or private keys
 - Packet captures, credentials, session tokens, or other players' data
 - Screenshots of the client
@@ -153,8 +157,9 @@ You also need:
 - 64-bit CPython `>=3.12,<3.13`
 - Java 17 (Eclipse Adoptium), for deriving the local runtime artifact
 - Firmware virtualization enabled, with a working `emulator -accel-check`
-- **Your own copy of the client**, and its script-bundle key in
-  `SPIRAL_BUNDLE_KEY`. Neither is provided here. Expected hashes are listed in
+- **Your own, lawfully obtained copy of the client**, and its script-bundle key
+  in `SPIRAL_BUNDLE_KEY`. Neither is provided here. Do not download the client
+  from third-party APK mirrors. Expected hashes are listed in
   `CHECKSUMS.sha256` so you can verify what you supply.
 
 ## Running it
@@ -203,10 +208,22 @@ obtained; studying the protocol; contributing fixes back here.
 assets, circumventing any purchase or entitlement check, or operating a public
 service using proprietary content.
 
+**What the tools do to your copy:** `tools/cocos_jsc.py` decrypts the client's
+script bundle with the key you supply, and `tools/cn_client_patch.py` patches
+your local copy so that it logs in to the local server instead of the
+publisher's retired login service. They exist only for personal, offline use
+of a game whose official servers have shut down. Whether decrypting or
+patching software you own is lawful depends on where you live, so check your
+local law first. You use this project at your own risk and are responsible for
+how you use it. It is provided as is, without warranty of any kind (see
+[LICENSE](LICENSE)).
+
 The MIT licence in [LICENSE](LICENSE) covers **this project's own code and
 documentation only** — not the game, its assets, or its trademarks. Attribution
 and the full content boundary are in [NOTICE](NOTICE).
 
 If you are a rights holder and believe anything here exceeds interoperability
-and fair use, please open an issue — we will act on well-founded requests
+and fair use, please contact the owner through the website linked on
+[their GitHub profile](https://github.com/gkaragioul) (this repository is
+archived, so issues are closed). We will act on well-founded requests
 promptly.

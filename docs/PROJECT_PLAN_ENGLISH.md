@@ -249,7 +249,7 @@ Do not build large speculative systems. Implement only what the client actually 
 ```markdown
 # Spiral Warrior English Offline Revival
 
-This workspace contains public Android client artifacts and tooling for building an English local/offline preservation prototype.
+This private workspace contains the operator's own Android client files and tooling for building an English local/offline preservation prototype. The client files are never part of the public repository.
 
 ## Key Artifacts
 - `international_latest.xapk` — international client, player-facing base.

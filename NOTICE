@@ -40,7 +40,10 @@ What this repository does not contain
 
   * No game client, APK, XAPK, split APK, OBB or installer.
   * No game assets: no art, audio, video, fonts or localisation bundles.
-  * No decrypted, decompiled or otherwise recovered proprietary source code.
+  * No decrypted, decompiled or otherwise recovered proprietary source code,
+    apart from a few short lines quoted in `tools/cn_client_patch.py` and
+    `server/tests/test_cn_client_patch.py` so the patch can find the code it
+    changes.
   * No cryptographic keys. The client's script-bundle key is supplied by the
     operator through the `SPIRAL_BUNDLE_KEY` environment variable and is
     never committed here.
@@ -74,9 +77,21 @@ They are regenerated from a locally supplied copy by the scripts in `tools/`,
 and the tests that verify them are gated behind the `preservation_artifact`
 marker precisely so that a clean checkout never requires the original.
 
+Decryption and patching tools
+-----------------------------
+
+`tools/cocos_jsc.py` decrypts the client's script bundle with a key the
+operator supplies. `tools/cn_client_patch.py` patches the operator's own local
+copy so that it logs in to the local server instead of the publisher's retired
+login service. They are provided only for personal, offline use of a
+lawfully obtained copy of a game whose official servers have shut down.
+Whether that use is lawful depends on the operator's jurisdiction; operators
+are responsible for checking their local law and for how they use the tools.
+
 If you are a rights holder
 --------------------------
 
 If you believe anything in this repository exceeds interoperability and fair
-use, please open an issue or contact the maintainers. We will act on
-well-founded requests promptly.
+use, please contact the owner through the website linked on their GitHub
+profile (https://github.com/gkaragioul); the repository is archived, so issues
+are closed. We will act on well-founded requests promptly.

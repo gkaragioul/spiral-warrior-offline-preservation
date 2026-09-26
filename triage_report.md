@@ -1,8 +1,8 @@
 # Spiral Warrior / 螺旋勇士 public-source triage
 
-## Acquired public artifacts
+## Client builds examined (operator's local copies, not included here)
 
-- International XAPK from APKPure direct CDN:
+- International XAPK:
   - Local file: `international_latest.xapk`
   - Package: `com.oversea.spinarena`
   - Version: `1.1.0.96`
@@ -74,9 +74,9 @@ Live checks:
 
 ## Initial feasibility conclusion
 
-A private-server revival is plausible from public artifacts alone because:
+A private-server revival is plausible from the client builds alone because:
 
-1. both client builds are obtainable publicly;
+1. two client builds (international and Chinese) exist to compare;
 2. the Chinese APK includes a large amount of shipped asset/config data;
 3. game/resource/login endpoint names are recoverable from assets;
 4. the client is Cocos JS, which is generally more approachable than IL2CPP for protocol reconstruction.
