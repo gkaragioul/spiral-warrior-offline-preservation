@@ -223,7 +223,6 @@ documentation only** — not the game, its assets, or its trademarks. Attributio
 and the full content boundary are in [NOTICE](NOTICE).
 
 If you are a rights holder and believe anything here exceeds interoperability
-and fair use, please contact the owner through the website linked on
-[their GitHub profile](https://github.com/gkaragioul) (this repository is
-archived, so issues are closed). We will act on well-founded requests
-promptly.
+and fair use, please open an issue in the
+[Game Preservation Hub](https://github.com/gkaragioul/game-preservation-hub) (this repository is archived, so
+its own issues are closed). We will act on well-founded requests promptly.

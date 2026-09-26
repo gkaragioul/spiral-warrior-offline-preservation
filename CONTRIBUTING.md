@@ -4,8 +4,11 @@ This project is **paused and looking for collaborators**. The original author
 has taken it as far as they intend to; everything below is an honest map of
 where it stands so someone else can pick it up.
 
-Issues and pull requests are welcome. There is no CLA and no style bureaucracy
-— but there are a few rules that exist for good reasons.
+This repository is archived, so it no longer accepts issues or pull requests.
+To carry the work on, fork it. The maintained copy is in the
+[Game Preservation Hub](https://github.com/gkaragioul/game-preservation-hub) under `projects/spiral-warrior`. There is no CLA
+and no style bureaucracy — but there are a few rules that exist for good
+reasons.
 
 ## Ground rules
 
